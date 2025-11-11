@@ -118,9 +118,13 @@
   }
   
   .image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 250px;
-    width: 335px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 6px;
+  }
+  .panel img {
+    max-height: 250px;
+    object-fit: contain;
   }
