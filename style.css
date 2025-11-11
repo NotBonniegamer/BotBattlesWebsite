@@ -123,3 +123,35 @@
     display: block;
     margin: 0 auto;
     border-radius: 6px;
+
+
+  .panel-hover {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .overlay-text {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background: rgba(0, 0, 0, 0.75);
+    color: var(--accent-yellow);
+
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    padding: 1rem;
+  }
+
+  .panel-hover:hover .image {
+    opacity: 0;
+    transition: opacity 0.4s ease;
+  }
+
+  .panel-hover:hover .overlay-text {
+    opacity: 1;
+  }
