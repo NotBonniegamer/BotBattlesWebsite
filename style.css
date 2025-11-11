@@ -123,8 +123,3 @@
     display: block;
     margin: 0 auto;
     border-radius: 6px;
-  }
-  .panel img {
-    max-height: 250px;
-    object-fit: contain;
-  }
